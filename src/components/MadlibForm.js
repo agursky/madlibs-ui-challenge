@@ -27,6 +27,7 @@ var MadlibForm = React.createClass({
             options={this.state.options}
           />
           {
+           
             Object.keys(this.state.value).filter(key => this.state.value[key]).length === Object.keys(this.state.inputs).length
             ? (
                 <button
