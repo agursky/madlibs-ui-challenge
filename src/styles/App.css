@@ -83,6 +83,10 @@ div.form-group input.form-control {
     width: 100%;
 }
 
+div.form-group input.form-control:hover {
+    border-bottom-color: #b5deff;
+}
+
 
 div.form-group.has-focus input.form-control {
     border-bottom-color: #95d0ff;
@@ -174,6 +178,7 @@ button {
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
+    cursor: pointer;
     
 }
 
@@ -200,7 +205,6 @@ button.submit-button {
 }
 
 button.back-button {
-/*    margin-top: 2px;*/
     
     background-color: #00bcd4;
 }
@@ -218,6 +222,12 @@ div.submitted-madlib {
     padding: 24px;
     color: #3c3c3c;
     border: 1px solid #dedede;
+}
+
+div.submitted-madlib-subContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 input[name=wordEndingWithLy]:focus ~ span.help-block.error-block {
@@ -283,7 +293,6 @@ input[name=wordEndingWithLy]:focus ~ span.help-block.error-block {
     }
     
     div.form-group label.control-label {
-        font-size: 14px;
         margin: 36px 0 18px;
         
     }
@@ -307,12 +316,10 @@ input[name=wordEndingWithLy]:focus ~ span.help-block.error-block {
     
     div.submitted-madlib {
         margin: 24px auto 24px;
-        font-size: 16px;
         max-width: 1000px;
     }
     
     .madlib-line {
-        font-size: 16px; 
         margin: 4px auto;
     }
     
@@ -320,4 +327,17 @@ input[name=wordEndingWithLy]:focus ~ span.help-block.error-block {
     
 }
 
+/*XL Desktop Settings************************************************/
+
+
+@media screen and (min-width: 1000px) {
+    
+    div.submitted-madlib-subContainer {
+        width: 45%;
+        display: inline-block;
+        margin: 12px;
+        
+    }
+    
+}
 
