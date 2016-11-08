@@ -84,7 +84,8 @@ div.form-group input.form-control {
 }
 
 div.form-group input.form-control:hover {
-    border-bottom-color: #b5deff;
+    border-bottom-color: #8dffb0;
+/*    border-bottom-color: #b5deff;*/
 }
 
 
